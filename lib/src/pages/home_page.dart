@@ -1,3 +1,4 @@
+import 'package:cromi/src/widgets/micro_swiper_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -51,8 +52,8 @@ class _HomePageState extends State<HomePage> {
             onPressed: () {
               pageController.animateToPage(
                 0,
-                duration: Duration(milliseconds: 300),
-                curve: Curves.linear,
+                duration: Duration(milliseconds: 500),
+                curve: Curves.easeInOut,
               );
             },
           ),
@@ -62,8 +63,8 @@ class _HomePageState extends State<HomePage> {
             onPressed: () {
               pageController.animateToPage(
                 1,
-                duration: Duration(milliseconds: 300),
-                curve: Curves.linear,
+                duration: Duration(milliseconds: 500),
+                curve: Curves.easeInOut,
               );
             },
           ),
@@ -81,7 +82,7 @@ class _HomePageState extends State<HomePage> {
       scrollDirection: Axis.vertical,
       physics:new NeverScrollableScrollPhysics(),
       children: <Widget>[
-        Text('Resultado de busqueda'),
+        MicroSwiper(),
         Text('Historial'),
       ],
     );
