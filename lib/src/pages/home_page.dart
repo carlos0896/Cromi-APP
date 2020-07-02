@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cromi', style: TextStyle(color: Colors.white),),
+        title: Text('CROMI', style: TextStyle(color: Colors.white),),
         elevation: 0.0,
         centerTitle: true,
       ),
